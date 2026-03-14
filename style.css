@@ -230,4 +230,89 @@ scroll-margin-top:100px;
 }.footer a{
 color:white;
 text-decoration:none;
+} 
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+header{
+padding:15px 20px;
+flex-direction:column;
+gap:10px;
+}
+
+nav{
+display:flex;
+gap:15px;
+}
+
+nav a{
+margin-left:0;
+font-size:14px;
+}
+
+.hero{
+padding:140px 20px 60px;
+}
+
+.hero-glass{
+padding:30px 20px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.story{
+gap:80px;
+padding:80px 20px;
+}
+
+.services{
+padding:80px 20px;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.tools{
+padding:80px 20px;
+}
+
+.founders{
+padding:80px 20px;
+}
+
+.founder-card{
+padding:25px;
+}
+
+.founder-card img{
+width:180px;
+height:180px;
+}
+
+footer{
+padding:30px 20px;
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px){
+
+.hero h1{
+font-size:26px;
+}
+
+.hero-glass{
+padding:25px 18px;
+}
+
+.service-card{
+padding:20px;
+}
+
 }
