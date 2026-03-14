@@ -1,145 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
 
-  <title>Visura Infotech | Web Design, IT & AI Solutions in India</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visura Infotech</title>
 
-  <meta name="description" content="Visura Infotech provides creative, AI-powered web design, IT services, and digital solutions for businesses in India.">
+<link rel="stylesheet" href="style.css">
 
-  <meta name="keywords" content="Visura Infotech, web design, IT services, AI solutions, digital agency India">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container header-inner">
+<canvas id="network"></canvas>
 
-    <!-- LOGO -->
-    <div class="logo-wrap">
-  <img src="https://i.ibb.co/WwT0NzS/Layer-0-Frame.png" alt="Visura Infotech Logo" class="logo-img">
-  <span class="company-name">Visura Infotech</span>
+<header>
+
+<div class="logo">
+
+<img src="https://i.ibb.co/mFSf575q/1000017167-jpg-1.jpg">
+
+<span>Visura Infotech</span>
+
+</div>
+
+<nav>
+
+<a>Home</a>
+<a href="https://visurainfotechabout.netlify.app/">About</a>
+<a href="https://visurainfotechcontact.netlify.app/">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div class="hero-glass">
+
+<h1>Future Ready Digital Solutions</h1>
+
+<p>
+Real Estate Editing • Twilight Editing • Virtual Staging • Web Development • AI Automation
+</p>
+
+</div>
+
+<div id="webgl"></div>
+
+</section>
+
+
+
+<section class="story">
+
+<div class="story-step">
+
+<h2>Creative Technology</h2>
+
+<p>
+We combine advanced technology and creativity to deliver powerful digital services.
+</p>
+
 </div>
 
 
 
+<div class="story-step">
 
-    <!-- NAV -->
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="https://example.com/about">About</a>
-      <a href="https://example.com/contact">Contact</a>
-      <button id="darkToggle">🌙</button>
-    </nav>
+<h2>AI Automation</h2>
 
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline>
-  <source src="https://res.cloudinary.com/donefxkbu/video/upload/Streksingel_265_solgsr.mp4" type="video/mp4">
-</video>
-
-
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <h1>Creative & AI-Powered Digital Solutions</h1>
-
-    <p class="hero-services">
-  Real Estate Editing • Graphic Design • Video Editing • Web Development • AI Integration • Tour&nbsp;Arrangements
+<p>
+Smart AI workflows designed for modern businesses.
 </p>
 
+</div>
 
-    <a href="https://example.com/get-quote" class="primary-btn">
-      Get a Quote
-    </a>
-  </div>
+
+
+<div class="story-step">
+
+<h2>Global Services</h2>
+
+<p>
+Providing digital solutions for clients worldwide.
+</p>
+
+</div>
+
 </section>
 
-<!-- SERVICES -->
-<section class="section" id="services">
-  <div class="container">
-    <h2 class="section-title">Our Services</h2>
 
-    <div class="services-grid">
 
-      <a href="https://visurainfotechrealestateediting.netlify.app/" class="service-card">
-  <div class="service-head">
-    <span class="icon">🏠</span>
-    <h3>Real Estate Editing</h3>
-  </div>
-  <p>HDR, sky replacement & virtual staging.</p>
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<a  class="service-card">
+<h3>Real Estate Editing</h3>
+<p>HDR editing, sky replacement and photo enhancement.</p>
 </a>
 
-<a href="https://example.com/graphic-design" class="service-card">
-  <div class="service-head">
-    <span class="icon">🎨</span>
-    <h3>Graphic Designing</h3>
-  </div>
-  <p>Branding & marketing creatives.</p>
+<a  class="service-card">
+<h3>Twilight Editing</h3>
+<p>Convert daytime photos into twilight sunset images.</p>
 </a>
 
-<a href="https://example.com/video-editing" class="service-card">
-  <div class="service-head">
-    <span class="icon">🎬</span>
-    <h3>Video Editing</h3>
-  </div>
-  <p>Reels, promos & corporate videos.</p>
+<a  class="service-card">
+<h3>Virtual Staging</h3>
+<p>3D staging using 3ds Max, V-Ray and Corona Renderer.</p>
 </a>
 
-<a href="https://example.com/web-development" class="service-card">
-  <div class="service-head">
-    <span class="icon">💻</span>
-    <h3>Web Development</h3>
-  </div>
-  <p>Modern business websites.</p>
+<a  class="service-card">
+<h3>Virtual Renovation</h3>
+<p>Digitally renovate property interiors.</p>
 </a>
 
-<a href="https://example.com/ai-integration" class="service-card">
-  <div class="service-head">
-    <span class="icon">🤖</span>
-    <h3>AI Integration</h3>
-  </div>
-  <p>Automation & smart AI tools.</p>
+<a  class="service-card">
+<h3>AutoCAD Floor Plans</h3>
+<p>Professional architectural floor plan drawings.</p>
 </a>
 
-<a href="https://example.com/tour-arrangements" class="service-card">
-  <div class="service-head">
-    <span class="icon">✈️</span>
-    <h3>Tour Arrangements</h3>
-  </div>
-  <p>Custom travel planning.</p>
+<a  class="service-card">
+<h3>Web Development</h3>
+<p>Modern responsive websites and applications.</p>
 </a>
 
-    </div>
-  </div>
+<a  class="service-card">
+<h3>AI Integration</h3>
+<p>Automation and AI powered workflow systems.</p>
+</a>
+
+<a  class="service-card">
+<h3>GST & IT Filing</h3>
+<p>GST returns, income tax filing and compliance.</p>
+</a>
+
+<a  class="service-card">
+<h3>Accounts Reconciliation</h3>
+<p>Bank reconciliation and financial verification.</p>
+</a>
+
+</div>
+
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-inner">
-    <p>© 2026 Visura Infotech Pvt Ltd</p>
 
-    <div class="socials">
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-      <a href="https://facebook.com" target="_blank">Facebook</a>
-      <a href="https://youtube.com" target="_blank">YouTube</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </div>
-  </div>
+
+<section id="tools" class="tools">
+
+<h2>Software & Tools</h2>
+
+<div class="tools-grid">
+
+<div>Photoshop</div>
+<div>Lightroom</div>
+<div>3ds Max</div>
+<div>V-Ray</div>
+<div>Corona Renderer</div>
+<div>AutoCAD</div>
+<div>Premiere Pro</div>
+<div>After Effects</div>
+<div>HTML</div>
+<div>CSS</div>
+<div>JavaScript</div>
+<div>Python</div>
+<div>Tally</div>
+<div>Zoho Books</div>
+
+</div>
+
+</section>
+
+
+
+<section id="founders" class="founders">
+
+<h2>Founders</h2>
+
+<div class="founder-grid">
+
+<div class="founder-card">
+
+<img src="https://i.ibb.co/YFjrbMRG/Gemini-Generated-Image-4ks9l44ks9l44ks9.png">
+
+<h3>Jayaprakash</h3>
+</br>
+<h4>Founder</h4>
+</br>
+<p>
+Technology strategist behind Visura Infotech with strong expertise in digital systems,
+automation and modern technology workflows.
+</p>
+
+</div>
+
+
+
+<div class="founder-card">
+
+<img src="https://i.ibb.co/yBGb6fVS/Gemini-Generated-Image-3vs1d03vs1d03vs1.png">
+
+<h3>Stephen</h3>
+</br>
+<h4>Co-Founder</h4>
+</br>
+<p>
+Responsible for client communication and relationship management ensuring smooth
+coordination between clients and the production team.
+</p>
+
+</div>
+
+
+
+<div class="founder-card">
+
+<img src="https://i.ibb.co/PZrCCMQF/Whats-App-Image-2026-03-10-at-9-48-52-AM.jpg">
+
+<h3>Hariprasath</h3>
+</br>
+<h4>Co-Founder</h4>
+</br>
+<p>
+Leads operational execution and team coordination ensuring high productivity and
+timely project delivery.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2025 Visura Infotech</p>
+</br>
+<div class="footer">
+<a href="https://www.visurainfotech.in/">visurainfotech.in</a>
+</div>
 </footer>
 
-<!-- CHAT -->
-<a href="https://example.com/chat" class="whatsapp">💬</a>
-
 <script src="script.js"></script>
+
 </body>
 </html>
-
